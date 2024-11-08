@@ -1,0 +1,467 @@
+@font-face {
+    font-family: 'TT-Lakes Bold';
+    src: url('../fonts/TTLakes-Bold.ttf');
+}
+@font-face {
+    font-family: 'TT-Lakes Regular';
+    src: url('../fonts/TTLakes-Regular.ttf');
+}
+@font-face {
+    font-family: 'TT-Lakes Medium';
+    src: url('../fonts/TTLakes-Medium.ttf');
+}
+
+@media (min-width: 320px) {
+    .mainContent {
+        margin: 0;
+        min-width: 320px;
+        height: 600px;
+        overflow: auto;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-container {
+        min-width: 320px;
+        height: 88px;
+        margin: 0;
+        display: flex;
+        background-color: white;
+        padding: 0 0;
+    }
+    .headerNavMenu__partLeft {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .headerNavMenu__partRight {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .header-container__menu {
+        display: flex;
+    }
+    .headerNavMenu {
+        min-width: 40px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: white;
+        margin-right: 16px;
+        &:hover {
+            filter: opacity(50%);
+        }
+    }
+    .header-container__burger {
+        margin-left: 16px;
+    }
+    .header-container__logoCPS {
+        width: 96.55px;
+        height: 50.81px;
+        background-image: url('../img/Group.svg');
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+    }
+    .header-container__divider {
+        width: 2px;
+        height: 32px;
+        background: #eaeaea;
+        margin-left: 16.7px;
+        margin-right: auto;
+        align-self: center;
+        margin-right: 20px;
+    }
+    .headerNavMenu__call {
+        display: none;
+    }
+    .headerNavMenu__chat {
+        display: none;
+    }
+    .headerNavMenu__profile {
+        display: none;
+    }
+    .headerNavMenu__textHeader {
+        display: none;
+    }
+    .header-container__dividerLeftMenu {
+        display: none;
+    }
+    .header-container__shadow {
+        min-width: 320px;
+        height: 1px;
+        background: #d9fff5;
+    }
+    .main-container {
+        min-width: 320px;
+        height: 100%;
+        font-family: 'TT-Lakes';
+        display: flex;
+        flex-direction: column;
+    }
+    .title-box {
+        display: flex;
+        width: 304px;
+        height: 40px;
+        margin-top: 24px;
+        margin-right: 16px;
+    }
+    .title-boxHeader {
+        display: none;
+    }
+    .title-box__title {
+        padding: 0;
+        margin: 0;
+        font-family: 'TT-Lakes Bold';
+    }
+    .title-box_hightight {
+        width: 4px;
+        height: 40px;
+        background-color: #41f6d7;
+        margin-right: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .contnent__subject {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+    }
+    .slideMenu {
+        width: 100%;
+        height: 40px;
+        align-self: flex-start;
+        justify-content: flex-end;
+        background-color: #f8f8f8;
+    }
+    .slideMenu__ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        overflow-x: auto;
+        padding-left: 24px;
+        flex-shrink: 0;
+        background-color: #f8f8f8;
+        &::-webkit-scrollbar {
+            scrollbar-width: none;
+        }
+    }
+    .slideMenu__button {
+        width: 246px;
+        height: 40px;
+        list-style-type: none;
+        flex-shrink: 0;
+        font-family: 'TT-Lakes Regular';
+        color: #7e7e82;
+        font-size: 16px;
+        border: 0;
+        margin: 0;
+        background-color: #f8f8f8;
+    }
+    .slideMenu__buttom--active {
+        &:hover {
+            border: 2px solid #b8ffec;
+            border-radius: 4px;
+        }
+    }
+    .slideMenu__link {
+        text-decoration: none;
+        color: black;
+        text-wrap: nowrap;
+        background-color: #f8f8f8;
+    }
+    .slideMenu__paddingButon {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16.5px;
+        padding-right: 9.3px;
+        border: 0;
+    }
+    .slideMenu__dopButton {
+        width: 211px;
+    }
+    .slideMenu__priceButton {
+        width: 143px;
+    }
+    .slideMenu__adressButton {
+        display: none;
+        width: 233px;
+    }
+    .slideMenu__specPrice {
+        width: 191px;
+    }
+    .slideMenu__Reviews {
+        display: none;
+        width: 95px;
+    }
+    .content_article {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        height: 100%;
+    }
+
+    .content_img__cps320 {
+        height: 180px;
+        width: auto;
+    }
+    .content__text {
+        display: flex;
+        justify-content: center;
+        min-width: 288px;
+        font-family: 'TT-Lakes Regular';
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        color: #1b1c21;
+        padding: 0;
+        margin: 0;
+        margin-right: 16px;
+        margin-left: 16px;
+        margin-top: 24px;
+    }
+    .content__text769px {
+        display: none;
+    }
+    .content_text1120px {
+        display: none;
+    }
+    .content__readMore {
+        width: 132px;
+        height: 24px;
+        background-color: #f8f8f8;
+        border: white;
+        margin: 16px;
+        margin-right: 172px;
+        padding: 0;
+        align-self: flex-start;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content__buttonText {
+        margin-left: 8px;
+        width: 100px;
+        height: 24px;
+        margin: 0;
+        font-family: 'TT-Lakes Regular';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        text-align: left;
+    }
+    .content__readMoreImg {
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/readMore.png');
+    }
+    .content_img {
+        width: 100vw;
+        height: 100%;
+        align-self: center;
+        position: relative;
+        display: none;
+        border: 5px;
+    }
+    .content__BackgroundImg {
+        background-image: url('../img/logoCPS.svg');
+        background-repeat: no-repeat;
+        padding: 0;
+        margin-bottom: 0;
+        width: 100%;
+        min-height: 250px;
+        background-size: cover;
+        position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    .content_img__cps320 {
+        display: none;
+    }
+
+    .mainContent {
+        height: 500px;
+        background-color: #f8f8f8;
+    }
+    .header-container {
+        background-color: white;
+    }
+    .header-container__divider {
+        margin-right: 20px;
+    }
+    .header-container__dividerLeftMenu {
+        display: block;
+        margin-left: 4px;
+    }
+    .headerNavMenu__call {
+        display: block;
+    }
+    .headerNavMenu__chat {
+        display: block;
+    }
+    .headerNavMenu__profile {
+        display: block;
+        margin-right: 0;
+    }
+    .header-container__logoCPS {
+        order: 2;
+    }
+    .slideMenu {
+        align-self: flex-end;
+    }
+    .content_article {
+        flex-direction: row;
+        min-width: 720px;
+        min-height: 208px;
+        padding: 24px;
+        padding-bottom: 0;
+    }
+    .content_flexText {
+        width: 50%;
+    }
+    .content_img {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        display: flex;
+        border: 5px;
+    }
+
+    .content_img__cps {
+        border-radius: 5px;
+        width: 360px;
+        height: auto;
+    }
+
+    .img320px {
+        display: none;
+    }
+    .content__text {
+        margin: 0;
+        flex-direction: column;
+        margin-right: 48px;
+    }
+    .content__text769px {
+        display: block;
+        flex-direction: row;
+    }
+    .content__readMore {
+        margin: 0;
+        margin-top: 10px;
+    }
+    .content__BackgroundImg {
+        min-height: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .mainContent {
+        background-color: #f8f8f8;
+        height: 540px;
+    }
+    .header-container {
+        background-color: #f8f8f8;
+    }
+    .headerNavMenu {
+        background-color: #f8f8f8;
+    }
+    .title-boxHeader {
+        display: flex;
+        width: 266px;
+    }
+    .title-box_hightight {
+        margin-right: 30px;
+    }
+    .title-box__title {
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6000000238418579px;
+        text-align: left;
+    }
+    .header-container__burger {
+        display: none;
+    }
+
+    .header-container__logoCPS {
+        display: none;
+    }
+    .header-container__dividerLeftMenu {
+        display: none;
+    }
+    .title-boxMain {
+        display: none;
+    }
+    .headerNavMenu__call {
+        display: none;
+    }
+    .headerNavMenu__chat {
+        display: none;
+    }
+    .headerNavMenu__profile {
+        display: none;
+    }
+    .header-container__dividerRightMenu {
+        display: none;
+    }
+    .headerNavMenu__repair {
+        align-self: center;
+    }
+    .headerNavMenu__textHeader {
+        font-family: 'TT-Lakes Medium';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        align-self: center;
+        margin-right: 8px;
+        display: block;
+    }
+    .headerNavMenu__search {
+        align-self: center;
+    }
+    .header-container__shadow {
+        display: none;
+    }
+    .contnent__subject {
+        margin: 0;
+    }
+    .content_text1120px {
+        display: block;
+    }
+    .slideMenu {
+        justify-self: end;
+    }
+    .slideMenu__adressButton {
+        display: block;
+    }
+    .slideMenu__Reviews {
+        display: block;
+    }
+    .slideMenu__ul {
+        flex-wrap: wrap;
+        padding-left: 34px;
+        background-color: #f8f8f8;
+    }
+    .content_article {
+        margin-top: 52px;
+        margin-left: 34px;
+    }
+    .content__text {
+        margin-right: 36px;
+    }
+    .content_img__cps {
+        border-radius: 5px;
+        height: 307px;
+        width: 530px;
+    }
+}

@@ -1,0 +1,152 @@
+.asideRemType {
+    background-color: #f8f8f8;
+    margin-top: 25px;
+}
+.titlePage {
+    height: 80px;
+    background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+    border-top: 1px solid #d9fff5;
+}
+.titlePage__text {
+    font-family: 'TT-Lakes Regular';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: #7e7e82;
+    padding: 16px;
+}
+.listBrendsType {
+    margin-top: 16px;
+    list-style: none;
+    margin-left: 16px;
+    flex-wrap: nowrap;
+}
+.typeRem {
+    width: 240px;
+    height: 160px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.swiper-slide__text {
+    font-family: 'TT-Lakes Medium';
+    padding: 16px;
+}
+.brend__next {
+    display: flex;
+    justify-content: end;
+    margin: 16px;
+}
+
+.button__img:hover {
+    background-color: #eaeaea;
+    border-radius: 50%;
+}
+.swiperType {
+    height: 220px;
+}
+.swiper-pagination {
+    height: 12px;
+    width: 204px;
+}
+.swiper-pagination-bullet {
+    height: 12px !important;
+    width: 12px !important;
+}
+.swiper-pagination-bullet-active {
+    --swiper-theme-color: #b5b6bc;
+}
+:root {
+    --swiper-theme-color: #dddddd;
+}
+.readMoreType {
+    display: none;
+}
+.readMoreType__icon {
+    transition: 0.25s;
+}
+.readMoreType__text {
+    font-family: 'TT-Lakes Medium';
+}
+
+@media (max-width: 767px) {
+    .readMore {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .titlePage {
+        height: 56px;
+        width: 726px;
+        margin: 0 auto;
+    }
+    .swiper,
+    .mySwiper {
+        all: unset;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .listBrendsType {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 16px;
+        width: 726px !important;
+        margin: 0 auto;
+        margin-top: 24px;
+        max-height: 160px;
+        overflow: hidden;
+        transition: max-height 0.25s ease !important;
+    }
+    .titlePage__text {
+        padding-left: 0;
+    }
+    .readMoreType {
+        all: unset;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 726px;
+        font-family: 'TT-Lakes';
+        font-weight: 500;
+        font-size: 16px;
+        height: 24px;
+        gap: 8px;
+        margin-top: 24px;
+    }
+    .typeRem {
+        width: 224px;
+        height: 160px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .asideRemType {
+        margin-top: 50px;
+    }
+    .listBrendsType {
+        width: 1065px !important;
+        gap: 32px;
+        row-gap: 16px;
+    }
+
+    .titlePage {
+        width: 1065px;
+    }
+
+    .typeRem {
+        width: 240px;
+        height: 160px;
+    }
+
+    .readMoreType {
+        width: 1065px;
+    }
+}

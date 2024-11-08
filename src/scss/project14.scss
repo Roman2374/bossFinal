@@ -1,0 +1,233 @@
+.aside-drop-menu {
+    width: 320px;
+    height: 100vh;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+.header-drop-menu {
+    width: 100%;
+    height: 51px;
+    display: flex;
+    padding-top: 18px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.link-header,
+.linkMain {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 0;
+}
+.link-header:hover,
+.linkMain:hover {
+    filter: opacity(50%);
+    transition: 0.7s;
+}
+.link-header {
+}
+.header-drop-menu__close {
+    background-image: url('../img/close.svg');
+    margin-left: 24px;
+    margin-right: 16px;
+}
+.header-drop-menu__logo-CPS {
+    width: 97px;
+    height: 51px;
+}
+.header-drop-menu__search {
+    background-image: url('../img/search.svg');
+    margin-right: 24px;
+    margin-left: auto;
+}
+.aside {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-drop-menu-top-container {
+    width: 222px;
+    padding-left: 24px;
+    margin-top: 45px;
+    margin-bottom: auto;
+}
+.mainDropMenuTopContainer__links {
+    display: flex;
+    flex-direction: column;
+}
+.main-drop-menu-top-container__link {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    height: 24px;
+    margin-top: 32px;
+    font-family: 'TT-Lakes Medium';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    &:hover {
+        color: #7e7e82;
+        transition: 0.2s;
+        &:before {
+            content: '';
+            background-color: #41f6d7;
+            position: absolute;
+            width: 4px;
+            height: 25px;
+            left: 0;
+            flex-shrink: 0;
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 10px;
+            margin-left: -1px;
+        }
+    }
+}
+.main-drop-menu-top-container__link-remont {
+    margin-top: 0;
+}
+.main-drop-menu-center-container {
+    height: 124px;
+    padding-left: 24px;
+}
+.main-drop-menu-center-container__links {
+    width: 196px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.linkMain__call {
+    background-image: url('../img/call.svg');
+}
+.linkMain__chat {
+    margin: 0 16px;
+    background-image: url('../img/chat.svg');
+}
+.linkMain__profile {
+    background-image: url('../img/profile.svg');
+}
+.main-drop-menu-center-container__email-text {
+    width: 106px;
+    height: 24px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-family: 'TT-Lakes Regular';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-style: normal;
+}
+.main-drop-menu-center-container__tel-text {
+    width: 196px;
+    height: 32px;
+    font-family: 'TT-Lakes Bold';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-style: normal;
+}
+.address {
+    width: 196px;
+    height: 68px;
+}
+.main-drop-menu-bottom-container {
+    width: 87px;
+    height: 24px;
+    margin-top: 40px;
+    display: flex;
+    padding-left: 24px;
+    margin-bottom: 32px;
+}
+.main-drop-menu-bottom-container__list-language {
+    display: flex;
+}
+.lang,
+.lang__button {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 0;
+}
+.lang__button {
+    &:hover {
+        color: #7e7e82;
+    }
+}
+.lang__en {
+    margin: 0 7px;
+}
+
+@media (max-width: 258px) {
+    .header-drop-menu__close {
+        margin-left: 10px;
+    }
+    .header-drop-menu__search {
+        margin-right: 10px;
+    }
+}
+
+@media (max-height: 622px) {
+    .mainDropMenuTopContainer {
+        margin-top: 10px;
+    }
+    .main-drop-menu-top-container__link {
+        margin-top: 18px;
+    }
+    .main-drop-menu-top-container__link-remont {
+        margin-top: 0;
+    }
+}
+
+@media (max-height: 678px) {
+    .mainDropMenuTopContainer {
+        margin-top: 20px;
+    }
+    .main-drop-menu-top-container__link {
+        margin-top: 24px;
+    }
+    .main-drop-menu-top-container__link-remont {
+        margin-top: 0;
+    }
+}
+
+@media (max-height: 718px) {
+    .main-drop-menu-bottom-container {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 320px) {
+    .aside-drop-menu {
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+        z-index: 3;
+    }
+}
+
+@media (min-width: 1440px) {
+    .aside-drop-menu {
+        display: block;
+        box-shadow: none;
+        width: 320px;
+        transform: translateX(0);
+    }
+
+    .header-drop-menu__close {
+        display: none;
+    }
+
+    .header-drop-menu__logo-CPS {
+        margin-left: 22px;
+    }
+}

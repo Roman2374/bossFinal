@@ -1,0 +1,238 @@
+.priceService {
+    margin-top: 40px;
+
+    & .titlePage {
+        margin-top: 30px;
+        background-image: unset;
+        border-top: unset;
+    }
+}
+
+.priceList {
+    margin: 0 auto;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.serviceInfo {
+    display: grid;
+    grid-template-columns: 50% 15% 15% 20%;
+    list-style: none;
+    font-family: 'TT-Lakes Regular';
+    font-size: 14px;
+    height: 64px;
+    align-items: center;
+
+    &__buy {
+        margin-left: auto;
+        width: 119px;
+        height: 32px;
+    }
+
+    &__name {
+        margin-left: 24px;
+    }
+
+    &__buy {
+        margin-right: 24px;
+    }
+
+    &__buy:hover {
+        opacity: 0.5;
+    }
+
+    &:first-child {
+        background-color: #f8f8f8;
+        height: 64px;
+        align-items: end;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:nth-child(2) {
+        padding-top: 8px;
+    }
+
+    &:first-child::after {
+        content: '';
+        width: 0;
+    }
+}
+
+.priceService__alert {
+    width: 421px;
+    height: 60px;
+    font-family: 'TT-Lakes Regular';
+    color: #1b1c21;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.20000000298023224px;
+}
+
+.priceService__proposal {
+    font-family: 'TT-Lakes Bold';
+    text-decoration: none;
+    position: relative;
+    top: 16px;
+    color: #1b1c21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 100%;
+        background-image: url(../img/Line-proposal.svg);
+        background-repeat: no-repeat;
+        background-position: 70% 65%;
+    }
+}
+
+.serviceInfoSlide__text {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .priceService__alert {
+        width: 288px;
+        margin: 16px;
+        margin-bottom: 0;
+    }
+
+    .priceService__proposal {
+        top: 65px;
+        font-size: 15px;
+        left: 10px;
+    }
+
+    .priceService .mySwiper {
+        height: 270px;
+    }
+
+    .priceList {
+        margin-left: 16px;
+        background-color: #f8f8f8;
+    }
+
+    .serviceInfo {
+        width: 240px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        background-color: white;
+        border-radius: 6px;
+        padding-left: 16px;
+        
+        &__name {
+            margin: 0;
+        }
+
+        &__buy {
+            align-self: end;
+            margin-left: 0;
+            margin-bottom: 16px;
+            margin-top: auto;
+        }   
+
+        &__time {
+            width: 120px;
+        }
+
+        &__price {
+        }
+
+        &:nth-child(2) {
+            padding-top: 0;
+        }
+
+        &__hidden {
+            display: none !important;
+        }
+    }
+
+    .serviceInfoSlide__text {
+        display: block;
+        color: #7E7E82;
+        font-size: 14px;
+        padding: 0;
+        opacity: 0.8;
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+
+    .priceList {
+        width: 720px;
+        flex-wrap: wrap;
+    }
+
+    .serviceInfo {
+        grid-template-columns: 55% 1fr 1fr 20%;
+
+        &__name {
+            margin: 0;
+            margin-left: 16px;
+        }
+
+        &__buy {
+            margin-right: 16px;
+        }
+        &::after {
+            content: '';
+            width: 688px;
+            height: 1px;
+            position: relative;
+            left: 16px;
+            background-color: #eaeaea;
+        }
+
+        &:last-child::after {
+            content: '';
+            width: 0;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .priceList {
+        width: 1065px;
+        flex-wrap: wrap;
+    }
+
+    .serviceInfo {
+        &::after {
+            content: '';
+            width: 1008px;
+            height: 1px;
+            position: relative;
+            left: 24px;
+            background-color: #eaeaea;
+        }
+
+        &:last-child::after {
+            content: '';
+            width: 0;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .priceService {
+        margin-left: 320px;
+        margin-top: 80px;
+    }
+
+    .priceService__alert {
+        margin-top: 32px;
+    }
+
+    .priceService__proposal {
+        margin-top: 16px;
+    }
+}

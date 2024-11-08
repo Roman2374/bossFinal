@@ -1,17 +1,36 @@
 $bgColor: #24292e;
 $text: #fff;
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+.site {
+    height: 100vh;
+    background-color: #f8f8f8;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.93;
+    position: fixed;
+    z-index: 2;
+    transform: translateX(-100%);
+}
+
+@media (min-width: 1440px) {
+    .mainContent,
+    .pageBrends,
+    .asideRemType {
+        padding-left: 320px;
+    }
+}
+
+.aside-drop-menu {
+    position: fixed;
 }
